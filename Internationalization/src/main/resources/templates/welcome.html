@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+   <head>
+      <meta charset = "ISO-8859-1"/>
+      <title>Internationalization</title>
+   </head>
+   <body>
+   <h1>Languages switch</h1>
+   <a th:href="@{?languageCode=te}">Telugu</a>
+   <a th:href="@{?languageCode=hi}">Hindi</a>
+   <a th:href="@{?languageCode=es}">French</a>
+      <h1 th:text = "#{welcome.text}"></h1>
+   </body>
+</html>
